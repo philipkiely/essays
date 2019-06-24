@@ -14,7 +14,7 @@ function emailListSignup() {
     if (email.indexOf("@") != -1 && email.indexOf(".") != -1) {
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://2opt1v52m0.execute-api.us-east-1.amazonaws.com/default/EmailListNewMember", true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.setRequestHeader('Content-Type', 'text/plain');
         xhr.send(JSON.stringify({
             email: email
         }));
