@@ -1,0 +1,42 @@
+.rounded-img {
+    border-radius: 50%;
+}
+
+.blue-text {
+    color: lightblue;
+}
+
+.orange-text {
+    color: orange;
+}
+
+.red-text {
+    color: red;
+}
+
+.white-text {
+    color: white;
+}
+
+.yellow-text {
+    color: yellow;
+}
+
+.pink-text {
+    color: lightpink;
+}
+
+.primary-accent-text {
+    color: #630000;
+}
+
+.post-info {
+    color: #630000 !important;
+}
+
+@media only screen and (min-width: 768px) {
+    #headline_image {
+        width: 50%;
+        height: 50%;
+    }
+}
