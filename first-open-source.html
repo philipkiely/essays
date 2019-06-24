@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141915528-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141915528-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My First Open...</title>
+    <!--boostrap 4 CSS-->
+    <link href="theme/lib/bootstrap.min.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="theme/style.css" type="text/css">
+    <!--jQuery (AJAX)-->
+    <script src="theme/lib/jquery.min.js"></script>
+    <!--boostrap 4 JS-->
+    <script src="theme/lib/bootstrap.bundle.min.js"></script>
+    <!--Font Awsome 5.8 (free version)-->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="/"><img id="nav-headshot" src="theme/img/square_headshot.jpg" width="50" height="50" class="d-inline-block align-top rounded-img" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Main</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/philipkiely">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/essays/">Essays</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+            <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+            &NonBreakingSpace;
+            &NonBreakingSpace;
+        </li>
+    </ul>
+        <a href="mailto:philip@kiely.xyz" class="nav-link btn btn-outline-primary">Email Me</a>
+  </div>
+</nav>
+ <div class="container">
+<div class="row">
+ <div class="col-md-8 offset-md-2">
+  <h1>My First Open Source&nbsp;Contribution</h1>
+  <code class="post-info">| First Posted <b>24 June 2019</b> | Last Edited <b>24 June 2019</b> | Philip Kiely |</code>
+  <hr/>
+  <p>Like most developers, I use open source software every day. I&#8217;m writing this article on <a href="https://atom.io">Atom</a>, an open source text editor, and I will publish it using <a href="https://github.com/getpelican/pelican">Pelican</a>, an open source static site generator. Pelican, in turn, is written in <a href="https://www.python.org">Python</a>, which itself is open source. I use <a href="https://getbootstrap.com">Bootstrap</a> for most of the styling on this site, and I have taken code snippets and inspiration from various freely available templates for components like the nav bar and&nbsp;footer.</p>
+<p>I put almost every line of code that I write outside of work on GitHub. Anytime I make a public repository, I make sure to stick a license on it so that people can actually use the contents; usually I use <span class="caps">MIT</span>, sometimes Apache 2.0. Thus, I could say that I have published thousands of lines of open source code across dozens of projects. However, most of that code is <a href="https://github.com/philipkiely/spectrumcompose">pretty useless</a> to other people, so I don&#8217;t go around saying&nbsp;that.</p>
+<h3>Contribution&nbsp;Story</h3>
+<p>One promise of open source is that with many people using a tool, they will improve it and share those improvements. Over time, the tool grows beyond what the original authors could have created given their time and resources. This is the story of my first time improving a tool that I&nbsp;use.</p>
+<p>The library in question is <a href="https://github.com/marvelapp/devices.css">devices.css</a>, which can render a variety of phones in <span class="caps">CSS</span> for using in websites. I used it on a couple of projects, but I quickly ran into the same issue that someone <a href="https://github.com/marvelapp/devices.css/issues/21">raised back in 2015</a>: the css devices are the same absolute size regardless of screen size. Someone in the comments on that issue came up with a clever workaround setting very small font sizes, however, that approach was broken on Google Chrome, which enforces a minimum font size. Someone else posted a link to a project that provided truly responsive devices, but they were not as detailed and you had to buy a license to use them in commercial projects. <a href="https://github.com/philipkiely/devices.css">My solution</a> lets you generate a device library of any size by modifying the underlying code&nbsp;directly.</p>
+<p>After I published my library, I left comments on the relevant issues in the original library. A few days later, <a href="https://github.com/Romainpetit">this guy</a> came along, starred the repository, and left the comment &#8220;Nice endeavour @philipkiely, it looks like you nailed it.&#8221; on the original repository. That made my day. This is another promise of open source: community recognition for making worthwhile&nbsp;improvements.</p>
+<p>I will not attempt to merge these changes back into the original project because the code is significantly different from the original. I only used a single file from the original as the source of this project, not the whole library, so it would not be a continuous history. The comments on the relevant issues should be sufficient to direct people who need it to my library. If the maintainers of the original library release a new version with new devices, I would be able to easily incorporate those changes into my&nbsp;version.</p>
+<h3>Technical&nbsp;Details</h3>
+<p>The original library is written in scss, a language that compiles to css. After parsing through the syntax to understand how it works, I realized that I could add a variable to change the scale of the devices. However, the original library was over two thousand lines, and every third line or so needed one of two changes to use the new variable. I wrote a python script that read through the code and applied the changes. I started by trying regular expressions, and if I knew regular expressions better I&#8217;m sure I could have done it without the script, but I&nbsp;don&#8217;t. </p>
+<p>This script generated an scss file with a single variable that you can change to change the scale. The library isn&#8217;t by default <em>responsive</em> but it is <em>resizable</em>. Developers can generate whatever size of devices they want and use that css file in websites. For fairly responsive resizing, a decent strategy is to generate css files for a few different scales (I recommend .33, .67, and 1 as a starting point) and switch between them using media&nbsp;queries. </p>
+<h3>Afterwards</h3>
+<p>After this experience, the next thing I want to do in open source is actually make a contribution to the main repository of a project that I use, hopefully a python library like Django. <a href="https://philipkiely.com/blog/software-bucket-list.html">It&#8217;s on my bucket list</a>.</p>
+  <hr/>
+  <p>Thanks for reading! For more, sign up for my email newsletter for fresh, original content on programming, technology, and business delivered to your inbox weekly.</p>
+  <form onsubmit="emailListSignup();return false;">
+    <div class="form-row">
+      <div id="invalid-email" class="alert alert-danger col-sm-12" role="alert" hidden>
+          Please enter a valid email.
+      </div>
+      <div id="valid-email" class="alert alert-success col-sm-12" role="alert" hidden>
+          Registration sent!
+      </div>
+      <div class="col-sm-12 col-md-9 mb-2 mb-md-0">
+        <input type="email" class="form-control form-control-lg" id="get-email" placeholder="Enter your email...">
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <button type="submit" class="btn btn-block btn-lg btn-primary">Sign Up!</button>
+      </div>
+    </div>
+  </form>
+  <br/>
+  <hr/>
+ </div>
+</div>
+<script>
+   $(document).ready(function () {
+      $("table").attr("class","table table-condensed table-bordered");
+   });
+</script>
+ </div>
+ <footer class="py-5 bg-dark main-footer">
+   <div class="container">
+     <p class="text-center white-text">philipkiely.com V3 | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a></p>
+     <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted for free with <a href="https://pages.github.com">GitHub Pages</a>.</p>
+     <h5 class="text-center">
+     <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+     &NonBreakingSpace;
+     </h5>
+     <hr>
+     <p class="text-center"><a href="https://github.com/philipkiely/philipkiely.github.io">Copyright &copy; <span id="year">2019</span> Philip Kiely</a></p>
+     <p class="text-center"><a href="/blank/">This page intentionally left blank</p>
+   </div><!-- /.container -->
+ </footer>
+ <script src="theme/script.js"></script>
+ </body>
+ </html>
