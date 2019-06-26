@@ -71,8 +71,17 @@
 <div class="row">
  <div class="col-md-8 offset-md-2">
   <h1>Posts in Other&nbsp;Publications</h1>
-  <code class="post-info">| First Posted <b>30 April 2019</b> | Last Edited <b>16 June 2019</b> | Philip Kiely |</code>
+  <code class="post-info">| First Posted <b>30 April 2019</b> | Last Edited <b>26 June 2019</b> | Philip Kiely |</code>
   <hr/>
+  <div id="audio-player">
+      You can listen to this essay
+      <audio controls preload="metadata">
+          <source src="" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      or <a id="audio-link" href="">download the mp3 file</a>.
+      <hr/>
+  </div>
   <p>I have been fortunate enough to write for a variety of other publications. Posts are listed in reverse chronological&nbsp;order. </p>
 <table>
 <thead>
@@ -83,6 +92,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>June 2019</td>
+<td>mkdev</td>
+<td><a href="https://mkdev.me/en/posts/how-to-cover-django-application-with-unit-tests">How to cover a Django application with Unit Tests</a></td>
+</tr>
 <tr>
 <td>June 2019</td>
 <td>FloydHub</td>
@@ -126,6 +140,9 @@
    $(document).ready(function () {
       $("table").attr("class","table table-condensed table-bordered");
    });
+   if (document.getElementById("audio-link").href == "https://philipkiely.com/essays/posts.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/posts.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
 </script>
  </div>
  <footer class="py-5 bg-dark main-footer">

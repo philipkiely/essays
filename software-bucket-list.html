@@ -73,6 +73,15 @@
   <h1>My Software Developer Bucket&nbsp;List</h1>
   <code class="post-info">| First Posted <b>13 June 2019</b> | Last Edited <b>13 June 2019</b> | Philip Kiely |</code>
   <hr/>
+  <div id="audio-player">
+      You can listen to this essay
+      <audio controls preload="metadata">
+          <source src="" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      or <a id="audio-link" href="">download the mp3 file</a>.
+      <hr/>
+  </div>
   <p>This is a living document. The list will be updated accordingly as I have new ideas that stick around for a while and, much more infrequently, as I actually do anything on this list. Currently the list stands at 8 to do and 2&nbsp;done.</p>
 <p>Each item inherits standard acceptance criteria. For something to be checked off, I have to ship something, whatever shipping means (literally deploying, merging a <span class="caps">PR</span>, solving some problem). If I have help doing something, for example, I write a mobile app at a hackathon with my friends and deploy it, that still counts. The items are in no particular&nbsp;order.</p>
 <h3>//&nbsp;ToDo</h3>
@@ -128,6 +137,9 @@
    $(document).ready(function () {
       $("table").attr("class","table table-condensed table-bordered");
    });
+   if (document.getElementById("audio-link").href == "https://philipkiely.com/essays/software-bucket-list.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/software-bucket-list.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
 </script>
  </div>
  <footer class="py-5 bg-dark main-footer">

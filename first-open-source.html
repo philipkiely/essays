@@ -73,6 +73,15 @@
   <h1>My First Open Source&nbsp;Contribution</h1>
   <code class="post-info">| First Posted <b>24 June 2019</b> | Last Edited <b>24 June 2019</b> | Philip Kiely |</code>
   <hr/>
+  <div id="audio-player">
+      You can listen to this essay
+      <audio controls preload="metadata">
+          <source src="https://philipkiely-essays-spoken.s3.amazonaws.com/first-open-source.cf9e93b6-8447-4936-82f3-f84c09e9f57f.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      or <a id="audio-link" href="https://philipkiely-essays-spoken.s3.amazonaws.com/first-open-source.cf9e93b6-8447-4936-82f3-f84c09e9f57f.mp3">download the mp3 file</a>.
+      <hr/>
+  </div>
   <p>Like most developers, I use open source software every day. I&#8217;m writing this article on <a href="https://atom.io">Atom</a>, an open source text editor, and I will publish it using <a href="https://github.com/getpelican/pelican">Pelican</a>, an open source static site generator. Pelican, in turn, is written in <a href="https://www.python.org">Python</a>, which itself is open source. I use <a href="https://getbootstrap.com">Bootstrap</a> for most of the styling on this site, and I have taken code snippets and inspiration from various freely available templates for components like the nav bar and&nbsp;footer.</p>
 <p>I put almost every line of code that I write outside of work on GitHub. Anytime I make a public repository, I make sure to stick a license on it so that people can actually use the contents; usually I use <span class="caps">MIT</span>, sometimes Apache 2.0. Thus, I could say that I have published thousands of lines of open source code across dozens of projects. However, most of that code is <a href="https://github.com/philipkiely/spectrumcompose">pretty useless</a> to other people, so I don&#8217;t go around saying&nbsp;that.</p>
 <h3>Contribution&nbsp;Story</h3>
@@ -111,6 +120,9 @@
    $(document).ready(function () {
       $("table").attr("class","table table-condensed table-bordered");
    });
+   if (document.getElementById("audio-link").href == "https://philipkiely.com/essays/first-open-source.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/first-open-source.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
 </script>
  </div>
  <footer class="py-5 bg-dark main-footer">

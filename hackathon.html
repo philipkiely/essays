@@ -73,6 +73,15 @@
   <h1>How to Succeed and Thrive at a&nbsp;Hackathon</h1>
   <code class="post-info">| First Posted <b>20 June 2019</b> | Last Edited <b>20 June 2019</b> | Philip Kiely |</code>
   <hr/>
+  <div id="audio-player">
+      You can listen to this essay
+      <audio controls preload="metadata">
+          <source src="" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      or <a id="audio-link" href="">download the mp3 file</a>.
+      <hr/>
+  </div>
   <p>One of my first times coding outside of class was at a hackathon during my first year of college. It was late February, and we drove through a snowstorm to an industrial building near the Iowa State University campus. Inside, we checked in at a folding table, and fortunately the person handling registration didn&#8217;t examine my <span class="caps">ID</span> carefully, as I was 17 at the time. For the next 36 hours, two friends and I developed a client-side JavaScript isometric map maker, <a href="https://gmareske.github.io/trimap/">trimap</a>. As I started from essentially zero knowledge, I had no choice but to learn more in that weekend than I had in the preceding weeks of <em>Introduction to Computer Science</em> combined. What we made is, without a doubt, a terrible piece of software, and to this day I am inordinately proud of&nbsp;it.</p>
 <p>Since then, I&#8217;ve been to a few more hackathons around Iowa. I got my first programming job from a hackathon and have won several prizes. Most importantly, I&#8217;ve now had several of these weekends to accelerate my learning on specifics topic. I think that every student studying programming should try a hackathon, and if you&#8217;re a college student in the United States, try a <span class="caps">MLH</span> (Major League Hacking) Hackathon. They are an organization that provides structure and support for hackathon organizers nationwide. Here are my tips for crushing it at a&nbsp;hackathon.</p>
 <h2>Before</h2>
@@ -148,6 +157,9 @@
    $(document).ready(function () {
       $("table").attr("class","table table-condensed table-bordered");
    });
+   if (document.getElementById("audio-link").href == "https://philipkiely.com/essays/hackathon.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/hackathon.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
 </script>
  </div>
  <footer class="py-5 bg-dark main-footer">
