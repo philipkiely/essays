@@ -12,7 +12,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Essays | philipkiely.com</title>
+    <title>Archiving a Wordpress Blog...</title>
     <!--boostrap 4 CSS-->
     <link href="theme/lib/bootstrap.min.css" rel="stylesheet">
     <!--Custom CSS-->
@@ -69,31 +69,54 @@
 </nav>
  <div class="container">
 <div class="row">
- <div class="col-12 col-md-8 offset-md-2">
-  <h1><code class="post-info">Essays</code></h1>
+ <div class="col-md-8 offset-md-2">
+  <h1>Archiving a Wordpress Blog with Web&nbsp;Scraping</h1>
+  <code class="post-info">| First Posted <b>09 July 2019</b> | Last Edited <b>09 July 2019</b> | Philip Kiely |</code>
   <hr/>
-   <h3><a href="https://philipkiely.com/essays/wordpress-scrape.html">Archiving a Wordpress Blog with Web&nbsp;Scraping</a></h3>
-   <code class="post-info">| First Posted <b>09 July 2019</b> | Last Edited <b>09 July 2019</b> | Philip Kiely |</code>
-   <p>My mother wrote a blog, Overneath it All, for many years. <a href="https://www.goodreads.com/author/show/5430737.Robin_Bourjaily/blog">Goodreads has an archive</a> as far back as 2015, but she wrote from well before that, starting in 2011. In January 2019, she decided to shut the blog down after not writing for it for six months, but she wanted an editable archive in case she wanted to use anything from it in the future. At her request, I scraped the entire blog into a giant Microsoft Word&nbsp;file&#8230;</p>
-   <hr/>
-   <h3><a href="https://philipkiely.com/essays/first-open-source.html">My First Open Source&nbsp;Contribution</a></h3>
-   <code class="post-info">| First Posted <b>24 June 2019</b> | Last Edited <b>24 June 2019</b> | Philip Kiely |</code>
-   <p>I put almost every line of code that I write outside of work on GitHub. Anytime I make a public repository, I make sure to stick a license on it so that people can actually use the contents; usually I use <span class="caps">MIT</span>, sometimes Apache 2.0. Thus, I could say that I have published thousands of lines of open source code across dozens of projects. However, most of that code is pretty useless to other people, so I don&#8217;t go around saying&nbsp;that&#8230;</p>
-   <hr/>
-   <h3><a href="https://philipkiely.com/essays/hackathon.html">How to Succeed and Thrive at a&nbsp;Hackathon</a></h3>
-   <code class="post-info">| First Posted <b>20 June 2019</b> | Last Edited <b>20 June 2019</b> | Philip Kiely |</code>
-   <p>One of my first times coding outside of class was at a hackathon during my first year of college. It was late February, and we drove through a snowstorm to an industrial building near the Iowa State University campus. Inside, we checked in at a folding table, and fortunately the person handling registration didn&#8217;t examine my <span class="caps">ID</span> carefully, as I was 17 at the time. For the next 36 hours, two friends and I developed a client-side JavaScript isometric map maker, trimap. As I started from essentially zero knowledge, I had no choice but to learn more in that weekend than I had in the preceding weeks of Introduction to Computer Science combined. What we made is, without a doubt, a terrible piece of software, and to this day I am inordinately proud of&nbsp;it&#8230;</p>
-   <hr/>
-   <h3><a href="https://philipkiely.com/essays/software-bucket-list.html">My Software Developer Bucket&nbsp;List</a></h3>
-   <code class="post-info">| First Posted <b>13 June 2019</b> | Last Edited <b>13 June 2019</b> | Philip Kiely |</code>
-   <p>This is a living document. The list will be updated accordingly as I have new ideas that stick around for a while and, much more infrequently, as I actually do anything on this list. Currently the list stands at 8 to do and 2&nbsp;done&#8230;</p>
-   <hr/>
-   <h3><a href="https://philipkiely.com/essays/posts.html">Posts in Other&nbsp;Publications</a></h3>
-   <code class="post-info">| First Posted <b>30 April 2019</b> | Last Edited <b>26 June 2019</b> | Philip Kiely |</code>
-   <p>I have been fortunate enough to write for a variety of other publications. Posts are listed in reverse chronological&nbsp;order&#8230;</p>
-   <hr/>
+  <div id="audio-player">
+      You can listen to this essay
+      <audio controls preload="metadata">
+          <source src="https://philipkiely-essays-spoken.s3.amazonaws.com/wordpress-scrape.27e70882-5e9a-404f-9de1-0c618bb5b213.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      or <a id="audio-link" href="https://philipkiely-essays-spoken.s3.amazonaws.com/wordpress-scrape.27e70882-5e9a-404f-9de1-0c618bb5b213.mp3">download the mp3 file</a>.
+      <hr/>
+  </div>
+  <p>My mother wrote a blog, Overneath it All, for many years. <a href="https://www.goodreads.com/author/show/5430737.Robin_Bourjaily/blog">Goodreads has an archive</a> as far back as 2015, but she wrote from well before that, starting in 2011. I didn&#8217;t read much of it, but I was featured in it regularly. She never referenced me by name, instead using my age (at the time, &#8220;Fifteen did this&#8221; or &#8220;Eighteen did that&#8221;). In January 2019, she decided to shut the blog down after not writing for it for six months, but she wanted an editable archive in case she wanted to use anything from it in the future. At her request, I scraped the entire blog into a giant Microsoft Word&nbsp;file.</p>
+<p>Web scraping is the sort of low hanging fruit in automation that has an outsized usefulness compared to its difficulty. Getting the code to work just so isn&#8217;t always straightforward, but the impact of the end product usually ranges from &#8220;saves hours of repetitive, error-prone manual copying&#8221; to &#8220;makes a previously impossible thing happen overnight.&#8221; This project definitely falls under the former category, the few hundred articles would have been possible but frustrating to manually copy and format into a complete corpus. Fortunately, on the account of not being a medieval scribe, I was able to use Python and BeautifulSoup to archive the&nbsp;blog. </p>
+<p>You can <a href="https://github.com/philipkiely/blogscrape">see the code here</a>, but it is very messy and specific. In general, writing good, clean code for a web scraper is very difficult because of the specificity of the data source and the likelihood of edge cases. In this case, I didn&#8217;t need clean code because I was certainly only going to use it once (after all, the website no longer exists), so I boiled a pot of spaghetti and threw it at the site. There were a variety of edge cases: posts with and without various metadata, images of various sizes, formats, and placements, and even one post from 2016 that somehow was its own page, like an &#8220;About&#8221; page would be: totally separate from the post feed. Through trial and error, I gathered the contents of the blog into the sort of Microsoft Word document that heats up your computer to 90 degrees Celsius just by opening&nbsp;it.</p>
+<p>In general, web scraping takes three steps: generate the links, scrape the pages, save the data. In this project, I generated the links by making the entire range of month-year archive links for the history of the blog. Thus, I had some pages with no posts, some with one post, and others with multiple posts. To deal with that, the second step involved a complex function (by which I mean 60 lines of if-else and try-except) that grabbed all of the text and images, plus a similar function for the aforementioned extra page. For the final step, I stored each post in a custom object, then iterated over an array of those objects, writing formatted text to a Microsoft Word file using the <code>docx</code> library. </p>
+<p>Web scraping can be frustrating and specific, but it is a powerful tool in a programmer&#8217;s arsenal. It&#8217;s helpful, but not necessary, to have done a fair bit of web programming yourself, as it reduces the number of concepts that you need to learn. If you want to practice web scraping by following along though a project, check out <a href="https://blog.floydhub.com/web-scraping-with-python/">my article on FloydHub</a>, which covers scraping Hacker News &#8220;Who is Hiring&#8221;&nbsp;threads.</p>
+  <hr/>
+  <p>Thanks for reading! For more, sign up for my email newsletter for fresh, original content on programming, technology, and business delivered to your inbox weekly.</p>
+  <form onsubmit="emailListSignup();return false;">
+    <div class="form-row">
+      <div id="invalid-email" class="alert alert-danger col-sm-12" role="alert" hidden>
+          Please enter a valid email.
+      </div>
+      <div id="valid-email" class="alert alert-success col-sm-12" role="alert" hidden>
+          Registration sent!
+      </div>
+      <div class="col-sm-12 col-md-9 mb-2 mb-md-0">
+        <input type="email" class="form-control form-control-lg" id="get-email" placeholder="Enter your email...">
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <button type="submit" class="btn btn-block btn-lg btn-primary">Sign Up!</button>
+      </div>
+    </div>
+  </form>
+  <br/>
+  <hr/>
  </div>
 </div>
+<script>
+   $(document).ready(function () {
+      $("table").attr("class","table table-condensed table-bordered");
+   });
+   if (document.getElementById("audio-link").href == "https://philipkiely.com/essays/wordpress-scrape.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/wordpress-scrape.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
+</script>
  </div>
  <footer class="py-5 bg-dark main-footer">
    <div class="container">
