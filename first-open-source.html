@@ -93,7 +93,9 @@
 <p>The original library is written in scss, a language that compiles to css. After parsing through the syntax to understand how it works, I realized that I could add a variable to change the scale of the devices. However, the original library was over two thousand lines, and every third line or so needed one of two changes to use the new variable. I wrote a python script that read through the code and applied the changes. I started by trying regular expressions, and if I knew regular expressions better I&#8217;m sure I could have done it without the script, but I&nbsp;don&#8217;t. </p>
 <p>This script generated an scss file with a single variable that you can change to change the scale. The library isn&#8217;t by default <em>responsive</em> but it is <em>resizable</em>. Developers can generate whatever size of devices they want and use that css file in websites. For fairly responsive resizing, a decent strategy is to generate css files for a few different scales (I recommend .33, .67, and 1 as a starting point) and switch between them using media&nbsp;queries. </p>
 <h3>Afterwards</h3>
-<p>After this experience, the next thing I want to do in open source is actually make a contribution to the main repository of a project that I use, hopefully a python library like Django. <a href="https://philipkiely.com/essays/software-bucket-list.html">It&#8217;s on my bucket list</a>.</p>
+<p>After this experience, the next thing I want to do in open source is actually make a contribution to the main repository of a project that I use, hopefully a python library like Django. <a href="https://philipkiely.com/essays/software-bucket-list.html">It&#8217;s on my bucket list</a>.</p>&#8718;
+  <hr/>
+  &nbsp;
   <hr/>
   <p>Thanks for reading! For more, sign up for my email newsletter for fresh, original content on programming, technology, and business delivered to your inbox weekly.</p>
   <form onsubmit="emailListSignup();return false;">
