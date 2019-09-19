@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141915528-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-141915528-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Computers and&nbsp;Poetry</title>
+    <!--boostrap 4 CSS-->
+    <link href="theme/lib/bootstrap.min.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="theme/style.css" type="text/css">
+    <!--jQuery (AJAX)-->
+    <script src="theme/lib/jquery.min.js"></script>
+    <!--boostrap 4 JS-->
+    <script src="theme/lib/bootstrap.bundle.min.js"></script>
+    <!--Font Awsome 5.8 (free version)-->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js" integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="/"><img id="nav-headshot" src="theme/img/square_headshot.jpg" width="50" height="50" class="d-inline-block align-top rounded-img" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Main</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/philipkiely">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/essays/">Essays</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+            <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+            &NonBreakingSpace;
+            <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+            &NonBreakingSpace;
+            &NonBreakingSpace;
+        </li>
+    </ul>
+        <a href="mailto:philip@kiely.xyz" class="nav-link btn btn-outline-primary">Email Me</a>
+  </div>
+</nav>
+ <div class="container">
+<div class="row">
+ <div class="col-md-8 offset-md-2">
+  <h1>Computers and&nbsp;Poetry</h1>
+  <code class="post-info">| First Posted <b>18 September 2019</b> | Last Edited <b>18 September 2019</b> | Philip Kiely |</code>
+  <hr/>
+  <div id="audio-player">
+      You can listen to this essay
+      <audio controls preload="metadata">
+          <source src="https://philipkiely-essays-spoken.s3.amazonaws.com/poetry.d20bf178-e686-4ccf-8ccd-e3f625910258.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      or <a id="audio-link" href="https://philipkiely-essays-spoken.s3.amazonaws.com/poetry.d20bf178-e686-4ccf-8ccd-e3f625910258.mp3">download the mp3 file</a>.
+      <hr/>
+  </div>
+  <p>The year was 2018, and I did not want to write a poem. Specifically, I did not want to write a <a href="http://jenbervin.com/projects/nets">net</a>, an interpretation of a Shakespearean sonnet first imagined by Jen Bervin. I had to do so as part of an assignment, but instead I wrote a program to generate them for me according to the constraints of the&nbsp;form. </p>
+<p>The program is a function in <a href="https://philipkiely.com/rhymes/">my page of sonnet utilities</a>, which I developed during the &#8220;Frankenstein Phase&#8221; of my website (so named because the website was green and grey and ugly). Other functions include generating rhyming lines and entire sonnets based on a line-by-line rhyming library derived from the sonnet&#8217;s&nbsp;structure.</p>
+<p>If I were trying to dupe an investor, I might say that the program uses <span class="caps">AI</span> to generate the most meaningful extract of the poem. In truth, the program uses a weighted random number generator and iterates over lists of&nbsp;words.</p>
+<p>Using the program, I was able to generate and write about a net, which I compared to another net on the same poem that I generated by hand. I generated the random net in front of the professor and used the first option that the program generated. The essay, in all of its early undergraduate glory, is included below, and I invite you to draw your own conclusions about the significance of the computer-generated&nbsp;net.</p>
+<h3>Computer-Generated&nbsp;Net</h3>
+<p>They that have <strong>power</strong> to hurt and will do&nbsp;none </p>
+<p>That do not do the thing they most do&nbsp;show </p>
+<p>Who, moving <strong>others</strong>, are themselves as&nbsp;stone</p>
+<p>Unmoved, cold, and to temptation&nbsp;slow</p>
+<p>They rightly do <strong>inherit</strong> heaven&#8217;s&nbsp;graces</p>
+<p>And husband nature&#8217;s riches from&nbsp;expense</p>
+<p>They are the lords and owners <strong>of</strong> their&nbsp;faces</p>
+<p><strong>Others</strong> but stewards of their&nbsp;excellence </p>
+<p>The summer&#8217;s flower is to the summer&nbsp;sweet</p>
+<p>Though to itself it only live and&nbsp;die </p>
+<p>But if that flower with base infection&nbsp;meet</p>
+<p>The basest weed outbraves his&nbsp;dignity</p>
+<p>For sweetest things turn sourest by their&nbsp;deeds </p>
+<p>Lilies that fester smell far worse than&nbsp;weeds</p>
+<h3>Human-Generated&nbsp;Net</h3>
+<p>They that have power to hurt and will do&nbsp;none </p>
+<p>That do not do the thing they most do <strong>show</strong> </p>
+<p>Who, moving others, are themselves as&nbsp;stone</p>
+<p>Unmoved, cold, and to temptation&nbsp;slow</p>
+<p>They rightly do inherit heaven&#8217;s&nbsp;graces</p>
+<p>And husband nature&#8217;s riches from&nbsp;expense</p>
+<p>They are the lords and owners of their&nbsp;faces</p>
+<p>Others but <strong>stewards</strong> of their <strong>excellence</strong> </p>
+<p>The summer&#8217;s flower is to the summer&nbsp;sweet</p>
+<p>Though to itself it only live and&nbsp;die </p>
+<p>But if that flower with base infection <strong>meet</strong></p>
+<p>The basest weed outbraves his&nbsp;dignity</p>
+<p>For sweetest things turn sourest by <strong>their&nbsp;deeds</strong> </p>
+<p>Lilies that fester smell far worse than&nbsp;weeds</p>
+<h3>Essay: Others&#8217;&nbsp;Power</h3>
+<p>Power, as a noun, grants the “ability to act or affect something strongly [or] physical or mental strength,” but as a verb means “to make powerful, empower, [or] strengthen” (Oxford English Dictionary). This distinction between power as held versus given in the first line of William Shakespeare’s sonnet 94 drives the poem and both nets. Both nets capture the rewarded altruism in the poem’s message using different words, but my human-generated net struggles to achieve precisely the same meaning for lack of some words that the computer-generated net&nbsp;used.</p>
+<p>Sonnet 94 cautions people with power, the noun, to use it judiciously. The poem describes an enviable class of people who wield power stoically. These subjects of the poem embody the concept of “the noble.” As people “illustrious or distinguished by virtue of position, character, or exploits,” they only perform “illustrious, renowned, [or] celebrated” deeds (Oxford English Dictionary). Their abstinence from action defines them; they do not harm, nor “do the thing they most do show,” nor sway to&nbsp;temptation. </p>
+<p>These people “rightly inherit heaven’s graces” and justly use them to rule. The phrase “lords and owners of their faces” extends the idea of a stoic monarch. By controlling their faces, or their outward appearance and speech, the subjects exert control over their surroundings. The speaker suggests that others recognize and respect these attributes and serve willingly before such&nbsp;excellence.</p>
+<p>To the speaker, deeds outweigh attributes, no matter how grand. The final six lines compare a flower, a representation of the subject of the poem, with a weed, representing someone of little importance. The section emphasizes the warning that “sweetest things turn sourest by their deeds.” Not only do deeds outweigh attributes, they determine them. The metaphor of the flower communicates this through the idea of an infection, where a bad deed ruins the no-longer-stoic subject’s&nbsp;beauty. </p>
+<p>The computer-generated net summarizes the theme of altruistic use of power. The first half of the net forms a command: “power others.” The command uses power as a verb, capturing the altruistic tone of the sonnet. Rather than focusing on the power that the subject holds, the net emphasizes the subject’s ability to empower other people. In return, the subject “inherits of others.” While the contents of the inheritance remain ambiguous, they would likely be “heaven’s graces,” which immediately follow “inherit” in the full poem. Regardless, the power given serves as an&nbsp;investment. </p>
+<p>“Inherit” plays a key role in the net by defining the investment of power as long-term. Inheritance refers to both property received at the death of the testator and traits derived from parents or ancestors (Oxford English Dictionary). In either case, the net gives a generations-long command, and the subject receives power back after the “others,” now “Others,” have used it. The change in capitalization underlines the effect of holding or using the subject’s power: a permanent increase in importance within the&nbsp;poem.</p>
+<p>My net echoes the same theme in different words. The command, “show stewards excellence,” speaks directly to the subject of the full poem: the lords. “Show” means both “to exhibit or demonstrate,” and “to teach,” instructing the subject to lead by example (Oxford English Dictionary). The return on investment, “meet their deeds,” promises the same as the first net and the full sonnet. Where the first net specified the subject as the recipient of their own magnified power, the second net similarly promises that the subject will see the results of their empowered&nbsp;stewards. </p>
+<p>As the computer-generated net locked down both instances of “other,” I selected steward in my net, limiting its precision. A steward, “an official who controls the domestic affairs of a household,” limits the audience of the subject’s excellence (Oxford English Dictionary). Where the computer-generated net rewards magnanimity towards all, the second limits it to the subject’s direct underlings. Thus, the second net’s skewed meaning solely instructs the subject to be worthy of&nbsp;service. </p>
+<p>This limited application reveals the bounds of meaning within the sonnet. There exists a steep diminishing marginal evocativeness from net to net when disallowing the reuse of words. Constructing a third net to echo the sonnet’s altruistic instruction would require stretching meanings thin; a fourth would be nearly impossible. With just over a hundred words, the sonnet in its full form withstands rigorous analysis; however, all but the strongest individual slices fail to hold&nbsp;up. </p>
+<p>This finite meaning indicates that some of the interpretation of the sonnet must come from the work itself rather than my projections onto it. I had projected all of the meaning, then I could keep extracting the same meaning with successive nets. Instead, the justifications would quickly become ridiculous. Furthermore, changing or removing any of the words in either net would fundamentally alter their meanings. Most randomly generated nets lack the fortunate grammatical structure of my first net. Removing any one word (except perhaps “of”) from the net would similarly wreck its facade of intentional meaning. For the second net, every word chosen intentionally contributes to the&nbsp;meaning.</p>
+<p>From my perspective, the computer had an advantage because it got to pick first. While I value some words more than others as material for a net, the algorithm weighs them all equally. Thus, the full sonnet must have some innate meaning even if some words more effectively capture that meaning. The fact that randomly chosen words in many cases reflect the message of the poem serves as a testament to its intentional construction. A worse sonnet by a lesser poet would suffer under such deconstruction; most random nets would be&nbsp;useless.</p>
+<p>The diminishing precision of the nets reveals both the power and the limitations of the original work. If I could reuse words, my final net would read “power others, meet their deeds.” The sonnet itself, like its subject, “power[s] others,” in that it gives material to create nets. Though it cannot make actions, the sonnet inspires others and “meets[s] their deeds,” in the form of&nbsp;interpretations. 
+ </p>
+<h3>References</h3>
+<p>Barbara Mowat, Paul Werstine (Editors) Shakespeare’s Sonnets and Poems. Folger Shakespeare Library,&nbsp;2006.</p>
+<p>“Power,” “Noble,” “Inherit,” “Show,” “Stewards.” The Oxford English Dictionary. 2nd Edition, 1989. Accessed online 12 March&nbsp;2018. </p>
+  <hr/>
+  <h3 class="text-center">&#9997;</h3>
+  <hr/>
+  <p>Thanks for reading! For more, sign up for my email newsletter for fresh, original content on programming, technology, and business delivered to your inbox weekly.</p>
+  <form onsubmit="emailListSignup();return false;">
+    <div class="form-row">
+      <div id="invalid-email" class="alert alert-danger col-sm-12" role="alert" hidden>
+          Please enter a valid email.
+      </div>
+      <div id="valid-email" class="alert alert-success col-sm-12" role="alert" hidden>
+          Registration sent!
+      </div>
+      <div class="col-sm-12 col-md-9 mb-2 mb-md-0">
+        <input type="email" class="form-control form-control-lg" id="get-email" placeholder="Enter your email...">
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <button type="submit" class="btn btn-block btn-lg btn-primary">Sign Up!</button>
+      </div>
+    </div>
+  </form>
+  <br/>
+  <hr/>
+ </div>
+</div>
+<script>
+   $(document).ready(function () {
+      $("table").attr("class","table table-condensed table-bordered");
+   });
+   if (document.getElementById("audio-link").href == "https://philipkiely.com/essays/computers-and-poetry.html" || document.getElementById("audio-link").href == "http://127.0.0.1:8000/computers-and-poetry.html") {
+       document.getElementById("audio-player").hidden = true;
+   }
+</script>
+ </div>
+ <footer class="py-5 bg-dark main-footer">
+   <div class="container">
+     <p class="text-center white-text">philipkiely.com V3 | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a></p>
+     <p class="text-center white-text">Built with <a href="https://github.com/getpelican/pelican">Pelican</a>, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted for free with <a href="https://pages.github.com">GitHub Pages</a>.</p>
+     <h5 class="text-center">
+     <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://github.com/philipkiely" class=""><i class="fab fa-github white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://twitter.com/philip_kiely" class=""><i class="fab fa-twitter blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://news.ycombinator.com/user?id=philipkiely" class=""><i class="fab fa-hacker-news orange-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://linkedin.com/in/philipkiely" class=""><i class="fab fa-linkedin-in white-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.facebook.com/philip.kiely.9/" class=""><i class="fab fa-facebook blue-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.snapchat.com/add/philipkiely" class=""><i class="fab fa-snapchat yellow-text"></i></a>
+     &NonBreakingSpace;
+     <a target="_blank" href="https://www.instagram.com/philip_kiely/" class=""><i class="fab fa-instagram pink-text"></i></a>
+     &NonBreakingSpace;
+     </h5>
+     <hr>
+     <p class="text-center"><a href="https://github.com/philipkiely/philipkiely.github.io">Copyright &copy; <span id="year">2019</span> Philip Kiely</a></p>
+     <p class="text-center"><a href="/blank/">This page intentionally left blank</p>
+   </div><!-- /.container -->
+ </footer>
+ <script src="theme/script.js"></script>
+ </body>
+ </html>
