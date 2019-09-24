@@ -72,6 +72,24 @@
  <div class="col-12 col-md-8 offset-md-2">
   <h1><code class="post-info">Essays</code></h1>
   <hr/>
+  <form onsubmit="emailListSignup();return false;">
+    <div class="form-row">
+      <p>Join developers worldwide in receiving original content every month.</p>
+      <div id="invalid-email" class="alert alert-danger col-sm-12" role="alert" hidden>
+          Please enter a valid email.
+      </div>
+      <div id="valid-email" class="alert alert-success col-sm-12" role="alert" hidden>
+          Registration sent!
+      </div>
+      <div class="col-sm-12 col-md-9 mb-2 mb-md-0">
+        <input type="email" class="form-control form-control-lg" id="get-email" placeholder="Enter your email...">
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <button type="submit" class="btn btn-block btn-lg btn-primary">Sign Up!</button>
+      </div>
+    </div>
+  </form>
+  <hr/>
    <h3><a href="https://philipkiely.com/essays/computers-and-poetry.html">Computers and&nbsp;Poetry</a></h3>
    <code class="post-info">| First Posted <b>18 September 2019</b> | Last Edited <b>18 September 2019</b> | Philip Kiely |</code>
    <p>The year was 2018, and I did not want to write a poem. Specifically, I did not want to write a <a href="http://jenbervin.com/projects/nets">net</a>, an interpretation of a Shakespearean sonnet first imagined by Jen Bervin. I had to do so as part of an assignment, but instead I wrote a program to generate them for me according to the constraints of the&nbsp;form.</p>
